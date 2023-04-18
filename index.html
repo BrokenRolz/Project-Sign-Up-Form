@@ -8,39 +8,57 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
-    <h2>This is not a real online service! You know you need something like this in your life to help you realize your dreams. Sign up <em>now</em> to get started.</h2>
-
-    <div class="sidebar">
-        <img class="sidebar_img" src="kameron-kincade-A4PW_x1XrL4-unsplash.jpg" alt="A rock trail">
-        <div class="sidebar_logo">
-            <img src="odin-lined.png" alt="Odin-logo">
+    <div id="container">
+        <div class="sidebar">
+            <div class="sidebar_logo">
+                <img class="logo" src="odin-lined.png" alt="Odin-logo">
+                <h1>GRIMZ</h1>
+            </div>
+            <p>Photo by Halie West on Unsplash</p>
         </div>
-    </div>
 
-    <form action="#" method="get">
-        <fieldset>
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name">
-
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name">
-
-            <label for="email_address">Email:</label>
-            <input type="email" id="email_address" name="email_address">
-
-            <label for="phone_number">Phone Number:</label>
-            <input type="number" id="phone_number" name="phone_number">
-
-            <label for="pwd">Password:</label>
-            <input type="password" id="pwd" name="pwd" required>
-
-            <label for="confirm_pwd">Confirm Password:</label>
-            <input type="password" id="confirm_pwd" name="confirm_pwd" required>
-        </fieldset>
-        <fieldset>
+        <div id="content">
+            <header>
+                <p>This is not a real online service!You know you need something like this in your life to help you realize your dreams.<br>Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> what to do.</p>
+            </header>   
+            
+            <form action="#" method="get">
+                <p class="bold">Let's do this!</p>
+                <div>
+                    <div class="first-name">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+                    <div class="last-name">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                </div>
+                <div>
+                    <div class="email">
+                        <label for="email_address">Email</label>
+                        <input type="email" id="email_address" name="email_address">
+                    </div>
+                    <div class="phn-num">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="number" id="phone_number" name="phone_number">
+                    </div>
+                </div>
+                <div>
+                    <div class="pwd">
+                        <label for="pwd">Password</label>
+                        <input type="password" id="pwd" name="pwd" required>
+                    </div>
+                    <div class="con-pwd">
+                        <label for="confirm_pwd">Confirm Password</label>
+                        <input type="password" id="confirm_pwd" name="confirm_pwd" required>
+                    </div>
+                </div>
+            </form>
             <button type="submit" id="submit_btn">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
-        </fieldset>
-    </form>
+        </div>
+    </div>
 </body>
 </html>
