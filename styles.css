@@ -1,3 +1,120 @@
-h2 {
-    margin-top: 100px;
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+/* sidebar image */
+.sidebar {
+    width: 35%;
+    height: 80%;
+    background-image: url(kameron-kincade-A4PW_x1XrL4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar .sidebar_logo {
+    width: 100%;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "norse-bold";
+    font-size: 2rem;
+    gap: 20px;
+}
+
+.logo {
+    height: 90%;
+}
+
+/* text content */
+#content {
+    width: 65%;
+    height: 100%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    background-color: rgba(211, 211, 211, 0.185);
+}
+
+header, form > p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    max-width: 930px;
+}
+
+header {
+    margin-left: 50px;
+}
+
+/* form */
+form {
+    width: 90%;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    box-shadow: 1px 5px 10px lightgray;
+}
+
+form > div {
+    display: flex;
+    gap: 100px;
+}
+
+form > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input {
+    width: 300px;
+    height: 35px;
+    border: .3px solid lightgray;
+    border-radius: 5px;
+}
+
+input:focus {
+    box-shadow: 1px 4px 10px lightgray;
+}
+
+input[type="text"]:focus {
+    outline-color: blue;
+}
+
+
+input[type="password"]:focus {
+    outline-color: red;
+}
+
+/* button */
+button {
+    margin-left: 50px;
+    color: white;
+    background-color: #596D48;
+    padding: 15px 60px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border-radius: 8px;
+}   
